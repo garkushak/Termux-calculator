@@ -10,33 +10,25 @@ print(Fore.GREEN + "║╔═╝║╔╗║║║─║╔═╝║║║║║
 print(Fore.BLUE + "║╚═╗║╔╗║║╚╗║╚═╗║╚╝║║╚╗║╔╗║─║╚╗║╚╝║║║─")
 print(Fore.CYAN+ "╚══╝╚╝╚╝╚═╝╚══╝╚══╝╚═╝╚╝╚╝─╚═╝╚══╝╚╝─")
 
-
-what = input("Выберите комманду + - / * Возвести в степень(**) Поделить по модулю(%)")
-a = float(input(Fore.BLACK + "Введите первое число: ") )
-b = float(input(Fore.GREEN + "Введдите второе число: ") )
-if what == "/,*,**,,%,+":
-      c = a + b
-      print("Результат" + str(c))
-elif what == "-":
- 	c = a - b
- 	print("Резульат" + str(c))
-
-elif what == "/":
-	c = a / b
-	print("Результат" + str(c))
-elif what == "*":
-     c = a * b
-     print("Результат" + str(c))
-elif what == "**":
-     c = a ** b
-     print("Результат" + str(c))	
-elif what == "%":
-	c = a % b
-	print("Результат" + str(c))
-
-
-
-
-
-else:
- 	print("Выбрана неверная операция!")
+print("Ноль в качестве знака операции"
+      "\nзавершит работу программы")
+while True:
+    s = input("Знак (+,-,*,/): ")
+    if s == '0':
+        break
+    if s in ('+', '-', '*', '/'):
+        x = float(input("x="))
+        y = float(input("y="))
+        if s == '+':
+            print("%.2f" % (x+y))
+        elif s == '-':
+            print("%.2f" % (x-y))
+        elif s == '*':
+            print("%.2f" % (x*y))
+        elif s == '/':
+            if y != 0:
+                print("%.2f" % (x/y))
+            else:
+                print("Деление на ноль!")
+    else:
+        print("Неверный знак операции!")
