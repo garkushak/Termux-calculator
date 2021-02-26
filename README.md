@@ -5,14 +5,14 @@ Installation/установка
 Type this commands in termux
 Напечатай эти комманды в термуксе
 
-  *apt update 
-  *apt upgrade
-   *pkg install git
-  *pkg install python
+  apt update 
+  apt upgrade
+   pkg install git
+  pkg install python
   pkg install python2
-*git clone https://github.com/garkushak/Termux-calculator.git*
-  *cd Termux-calculator*
-*python calc.py*
+git clone https://github.com/garkushak/Termux-calculator.git
+  cd Termux-calculator
+python calc.py
 
 
 
